@@ -52,12 +52,7 @@ function printEvent(\DateTime $day, $summary)
 
 // Der Server arbeitet in ISO-8859-1; also konvertieren wir, falls nötig
 if (strpos($_SERVER['QUERY_STRING'], '%C3%') !== false) {
-	$_SERVER['QUERY_STRING'] = str_replace(
-		//    Ä         Ö         Ü         ä         ö         ü         ß
-		array('%C3%84', '%C3%96', '%C3%9C', '%C3%A4', '%C3%B6', '%C3%BC', '%C3%9F'),
-		array('%C4',    '%D6',    '%DC',    '%E4',    '%F6',    '%FC',    '%DF'),
-		$_SERVER['QUERY_STRING']
-	);
+	$_SERVER['QUERY_STRING'] = utf8_decode($_SERVER['QUERY_STRING']);
 }
 
 // Abfragen, Ausgabe nach UTF-8 konvertieren
