@@ -24,7 +24,7 @@ date_default_timezone_set('Europe/Berlin');
  * 
  * @param \DateTime $day
  * @param string $summary
- * @return integer
+ * @return int
  */
 function printEvent(\DateTime $day, $summary)
 {
