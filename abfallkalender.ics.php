@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Skript zur Umwandlung des Online-Abfallkalenders des Bremer Entsorgungsbetriebe
+ * Skript zur Umwandlung des Online-Abfallkalenders der Bremer Stadtreinigung
  * in das iCalendar-Format.
  *
  * @author Philipp Cordes <pc@irgendware.net>

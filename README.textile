@@ -3,7 +3,7 @@ h1. Bremer Abfallkalender als iCalendar
 Der Bremer Abfallkalender lässt sich online einsehen, leider gibt es keinen Export als ICS.
 Dieses kleine PHP-Skript liest die Termine aus und wandelt sie in das "iCalendar-Format":https://de.wikipedia.org/wiki/ICalendar um.
 
-Alle übergebenen Parameter werden an das Skript der "Entsorgung kommunal (Ex-BEB)":http://www.entsorgung-kommunal.de/ weitergegeben:
+Alle übergebenen Parameter werden an das Skript der "Bremer Stadtreinigung":https://www.die-bremer-stadtreinigung.de/ weitergegeben:
 
 |_. Parameter |_. Datentyp |_. Bemerkungen |
 | @strasse@ | String | Der Server will eigentlich ISO-8859-1, das Skript konvertiert aber (falls nötig) aus UTF-8. |
@@ -12,6 +12,6 @@ Alle übergebenen Parameter werden an das Skript der "Entsorgung kommunal (Ex-BE
 | @startdate@ | Datum, optional |/2. Format TT.MM.JJJJ, idealerweise zusammen angeben |
 | @enddate@ | Datum, optional |
 
-Gültige Kombinationen aus Straßenname und Hausnummer baut man sich am besten "mit dem Tool der EKO":http://213.168.213.236/bremereb/bify/bify.jsp zusammen.
+Gültige Kombinationen aus Straßenname und Hausnummer baut man sich am besten "mit dem Online-Tool der Stadtreinigung":http://213.168.213.236/bremereb/bify/bify.jsp zusammen.
 
 Weil sich die Termine nicht allzu häufig ändern (sollten), kann man dem Kalender ruhig vertellen, dass er nicht so oft zu aktualisieren braucht.
