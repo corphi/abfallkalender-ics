@@ -39,7 +39,15 @@ function printEvent(\DateTime $day, $summary)
     }
 
     // Bei abweichenden Wochentagen verkürzt
-    $summary = str_replace('G.Sack', 'Gelber Sack', $summary);
+    $summary = str_replace([
+        'Bioabf.',
+        'G.Sack',
+        'Restm.',
+    ], [
+        'Bioabfall',
+        'Gelber Sack',
+        'Restmüll',
+    ], $summary);
 
     $slug = preg_replace('/\\W+/', '', $summary);
 
